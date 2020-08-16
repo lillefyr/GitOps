@@ -17,7 +17,7 @@ kind: ServiceAccount
 metadata:
   name: gitops-agent
 ---
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: gitops-agent
@@ -33,7 +33,7 @@ spec:
           serviceAccountName: gitops-agent
           containers:
             - name: main
-              image: agent
+              image: ariedeldocker/agent
               imagePullPolicy: IfNotPresent
               args:
                 - /bin/sh
