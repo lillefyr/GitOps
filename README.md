@@ -8,7 +8,7 @@ From https://github.com/gitops-workshop/poor-mans-gitops
 ### 1. Build The Agent
 
 ```
-docker build -t my-agent:v1 agent
+docker build -t my-agent agent
 ```
 
 ### 2. Install The Agent
@@ -27,8 +27,9 @@ watch kubectl -n default get all
 ### Publish Agent
 
 ```
-docker tag my-agent:v1 lillefyr/agent:v1
-docker push lillefyr/agent:v1
+docker login
+docker tag my-agent ariedeldocker/agent
+docker push ariedeldocker/agent
 ```
 -->
 

@@ -8,5 +8,5 @@ metadata:
 spec:
   containers:
     - name: main
-      image: lillefyr/my-app:v1
+      image: ariedeldocker/my-app
       imagePullPolicy: IfNotPresent
