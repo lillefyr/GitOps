@@ -8,5 +8,5 @@ metadata:
 spec:
   containers:
     - name: main
-      image: alexcollinsintuit/my-app:v1
+      image: lillefyr/my-app:v1
       imagePullPolicy: IfNotPresent
